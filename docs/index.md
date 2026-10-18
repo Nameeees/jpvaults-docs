@@ -68,8 +68,9 @@ the network.
 
 | Command | What it does | Permission |
 | --- | --- | --- |
-| `/pv <number>` | Opens your vault with that number. | `jpvaults.use` |
-| `/pv` or `/pv help` | Shows the help and how many vaults you have. | `jpvaults.use` |
+| `/pv` | Opens the vault picker: one icon per vault, with its item count. | `jpvaults.use` |
+| `/pv <number>` | Opens your vault with that number directly. | `jpvaults.use` |
+| `/pv help` | Shows the help and how many vaults you have. | `jpvaults.use` |
 | `/pv reload` | Reloads `config.yml` and the messages. | `jpvaults.reload` |
 | `/pv admin ...` | Administrator tools (open, info, delete, migrate). | `jpvaults.admin` |
 

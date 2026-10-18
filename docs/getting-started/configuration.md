@@ -32,13 +32,18 @@ sounds:
 | Key | Description | Default |
 | --- | --- | --- |
 | `language` | Message language (`messages_<language>.yml`). Bundled: `en`, `es`. | `en` |
+| `messages-format` | How the messages are read: `legacy`, `minimessage` or `auto` (a message written with tags becomes a Component, the rest stay legacy). See [Messages & colours](../reference/colours.md). | `auto` |
 | `vaults.size` | Slots per vault. Multiple of 9, from 9 to 54. | `54` |
 | `vaults.default-amount` | Vaults for players without any `jpvaults.vaults.<n>` permission. | `1` |
 | `vaults.max-amount` | Highest `jpvaults.vaults.<n>` the plugin checks (1–100). | `10` |
+| `vaults.picker` | `/pv` with no arguments opens the vault menu. `false` shows the help text instead. | `true` |
+| `vaults.title-max-length` | Longest inventory title in visible characters; `0` = no limit. 1.8–1.12 clients break above 32. | `32` |
 | `storage.type` | `yaml` or `mysql`. Changing it requires a restart. | `yaml` |
 | `storage.mysql.*` | Connection details for the database backend; see [Storage backends](storage.md). | — |
 | `storage.folder` | Folder inside the plugin folder with the per-player files. Changing it requires a restart. | `data` |
 | `storage.autosave-seconds` | How often open vaults are saved. `0` disables autosave; close, quit and shutdown still save. | `300` |
+| `storage.item-format` | Database backend: `auto` (NBT where the server has it), `nbt` or `bukkit`. | `auto` |
+| `storage.yaml-format` | YAML backend: `readable` (one item per slot) or `nbt` (each vault as Base64 NBT). | `readable` |
 | `sounds.enabled` | Interface sounds. | `true` |
 | `sounds.volume` | Sound volume (0.0–1.0). | `0.7` |
 | `sounds.pitch` | Sound pitch (0.5–2.0). | `1.4` |

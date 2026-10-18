@@ -98,11 +98,13 @@ nav:
       - Installation: getting-started/installation.md
       - Configuration: getting-started/configuration.md
       - Languages & messages: getting-started/languages.md
+      - Storage backends: getting-started/storage.md
   - Features: features.md
   - Reference:
       - Commands: reference/commands.md
       - Permissions: reference/permissions.md
       - Admin commands: reference/admin-commands.md
+      - Messages & colours: reference/colours.md
   - Data safety: data-safety.md
   - Compatibility: compatibility.md
   - FAQ: faq.md
