@@ -83,6 +83,9 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
+      link: https://github.com/Nameeees/JPPlayerVaults
+      name: Plugin source code
+    - icon: fontawesome/brands/github
       link: https://github.com/Nameeees/jpvaults-docs
       name: Documentation repository
     - icon: fontawesome/brands/discord

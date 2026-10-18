@@ -12,7 +12,9 @@ dependency.
 
 ## Steps
 
-1. Download `JPPlayerVaults-<version>.jar`.
+1. Download `JPPlayerVaults-<version>.jar` from the
+   [releases page](https://github.com/Nameeees/JPPlayerVaults/releases) (or from the SpigotMC
+   resource page).
 2. Copy it into the server's `plugins/` folder.
 3. Start the server (or run `/reload confirm` if it is already running).
 4. Grant `jpvaults.vaults.<n>` to your ranks — see [Permissions](../reference/permissions.md).
