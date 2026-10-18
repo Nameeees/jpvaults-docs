@@ -1,0 +1,8 @@
+# Generated site
+site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.cache/
