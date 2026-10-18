@@ -5,8 +5,11 @@
 | `/pv <number>` | Opens your private vault with that number. | `jpvaults.use` |
 | `/pv` or `/pv help` | Shows the help and how many vaults you have. | `jpvaults.use` |
 | `/pv reload` | Reloads `config.yml` and the messages without restarting. | `jpvaults.reload` |
+| `/pv admin ...` | Administrator tools: open, info, delete and migrate. | `jpvaults.admin` |
 
 Aliases: `/playervaults`, `/jpvaults`.
+
+The administrator subcommands are documented in [Admin commands](admin-commands.md).
 
 ## Examples
 

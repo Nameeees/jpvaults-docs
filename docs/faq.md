@@ -15,6 +15,13 @@ declare the node anywhere.
 The data is plain YAML in `plugins/JPPlayerVaults/data/<uuid>.yml`. Have the player quit (or stop the
 server) before editing it. An in-game administrator editor is not part of 1.0.
 
+## Can I edit a player's vault from the console?
+
+Yes. `/pv admin open <player|uuid> <number>` opens it in game, and `/pv admin info <player>` shows
+what that player has stored. On YAML storage you can also edit
+`plugins/JPPlayerVaults/data/<uuid>.yml` with the server stopped or the player offline. See
+[Admin commands](reference/admin-commands.md).
+
 ## What happens if the server crashes while a vault is open?
 
 The last save is restored. Autosave runs every 300 seconds by default, so at most a few minutes of
@@ -25,9 +32,17 @@ changes can be lost; lower `storage.autosave-seconds` if your server is unstable
 No. Lowering `vaults.size` hides the extra rows but keeps the items in the file; raising it again
 brings them back.
 
-## Does it work with Folia or with MySQL?
+## Does it work with MySQL?
 
-Neither is supported. The plugin is a standard Bukkit plugin with YAML storage.
+Yes, optionally. Set `storage.type: mysql` and the vaults are stored in a database over JDBC (MySQL,
+MariaDB or anything compatible), with the tables created automatically. YAML stays the default, and
+`/pv admin migrate` copies your existing files into the database. If the database cannot be reached
+the plugin logs the error and keeps running on YAML rather than leaving the server without vaults.
+See [Storage backends](getting-started/storage.md).
+
+## Does it work with Folia?
+
+No, it is a standard Bukkit plugin that uses the regular scheduler.
 
 ## Can I translate the plugin?
 
@@ -38,7 +53,8 @@ Yes. Copy `messages_en.yml` to `messages_<code>.yml`, translate the values and s
 ## Can players share a vault?
 
 No, vaults are private per player and keyed by UUID. Nothing in the plugin exposes another player's
-vault.
+vault; administrators can open one with [admin commands](reference/admin-commands.md), which is
+logged.
 
 ## Which files do I need to back up?
 

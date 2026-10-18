@@ -46,6 +46,22 @@ the network.
 
     [:octicons-arrow-right-24: How it works](data-safety.md)
 
+-   :material-database:{ .lg .middle } **Storage backends**
+
+    ---
+
+    Readable YAML files by default, or MySQL/MariaDB over JDBC if you prefer a database.
+
+    [:octicons-arrow-right-24: Storage](getting-started/storage.md)
+
+-   :material-account-wrench:{ .lg .middle } **Admin commands**
+
+    ---
+
+    Open another player's vault, inspect a player, wipe one vault and migrate storage.
+
+    [:octicons-arrow-right-24: Admin commands](reference/admin-commands.md)
+
 </div>
 
 ## Quick reference
@@ -55,6 +71,7 @@ the network.
 | `/pv <number>` | Opens your vault with that number. | `jpvaults.use` |
 | `/pv` or `/pv help` | Shows the help and how many vaults you have. | `jpvaults.use` |
 | `/pv reload` | Reloads `config.yml` and the messages. | `jpvaults.reload` |
+| `/pv admin ...` | Administrator tools (open, info, delete, migrate). | `jpvaults.admin` |
 
 Aliases: `/playervaults`, `/jpvaults`. See [Commands](reference/commands.md).
 

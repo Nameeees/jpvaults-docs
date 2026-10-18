@@ -1,5 +1,31 @@
 # Changelog
 
+## 1.1.0 — 2026-10-18
+
+Database storage and administrator tools.
+
+### Added
+
+- **Optional SQL storage** (`storage.type: mysql`) alongside the YAML files. Any database reachable
+  over JDBC works; MySQL and MariaDB are preconfigured, tables are created automatically and every
+  vault is written inside a transaction.
+- **`/pv admin` subcommands**, behind the new `jpvaults.admin` permission (OP by default):
+    - `/pv admin open <player|uuid> <number>` — open another player's vault, online or offline.
+    - `/pv admin info [player]` — plugin status, or a report for one player.
+    - `/pv admin delete <player|uuid> <number> confirm` — wipe one vault.
+    - `/pv admin migrate [force]` — copy the YAML files into the database, in batches, keeping the
+      originals.
+- Database settings in `config.yml`: host, port, database, credentials, table prefix, pool size,
+  connection timeout, driver class and a raw JDBC URL for other engines.
+- When stored data cannot be read, the plugin refuses to open the vault and asks the player to
+  contact an administrator, instead of showing an empty vault that the next save would write over.
+
+### Changed
+
+- A vault can only be open for one person at a time, so an administrator cannot edit a vault while
+  its owner has it open (and the other way round).
+- `/pv reload` reports when storage settings changed and a restart is needed.
+
 ## 1.0.0 — 2026-10-18
 
 First public release.

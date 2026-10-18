@@ -5,6 +5,9 @@
 | `jpvaults.use` | Allows using `/pv` and opening your own vaults. | `true` |
 | `jpvaults.vaults.<n>` | The rank gets access to `n` vaults. The highest number the player has is used. | `false` |
 | `jpvaults.reload` | Allows `/pv reload`. | OP |
+| `jpvaults.admin` | Allows the `/pv admin` subcommands (open, info, delete, migrate). | OP |
+
+See [Admin commands](../reference/admin-commands.md) for what the administrator subcommands do.
 
 ## Vault count per rank
 

@@ -12,8 +12,16 @@ vaults:
   max-amount: 10        # highest jpvaults.vaults.<n> checked
 
 storage:
+  type: yaml            # yaml or mysql (database over JDBC)
   folder: 'data'
   autosave-seconds: 300 # 0 disables autosave
+  mysql:                # only used when type is mysql
+    host: '127.0.0.1'
+    port: 3306
+    database: 'jpvaults'
+    username: 'root'
+    password: ''
+    table-prefix: 'jpvaults_'
 
 sounds:
   enabled: true
@@ -27,6 +35,8 @@ sounds:
 | `vaults.size` | Slots per vault. Multiple of 9, from 9 to 54. | `54` |
 | `vaults.default-amount` | Vaults for players without any `jpvaults.vaults.<n>` permission. | `1` |
 | `vaults.max-amount` | Highest `jpvaults.vaults.<n>` the plugin checks (1–100). | `10` |
+| `storage.type` | `yaml` or `mysql`. Changing it requires a restart. | `yaml` |
+| `storage.mysql.*` | Connection details for the database backend; see [Storage backends](storage.md). | — |
 | `storage.folder` | Folder inside the plugin folder with the per-player files. Changing it requires a restart. | `data` |
 | `storage.autosave-seconds` | How often open vaults are saved. `0` disables autosave; close, quit and shutdown still save. | `300` |
 | `sounds.enabled` | Interface sounds. | `true` |
