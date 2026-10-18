@@ -53,5 +53,5 @@ cuts longer titles and warns once in the console.
 ## Something is broken. What do I send?
 
 The server version, the plugin version, your `config.yml`, and the console log around the error.
-Reports are welcome in the [community Discord](https://discord.gg/HATd9QgukF) or the SpigotMC
+Reports are welcome in the [community Discord](https://discord.gg/VQSvfQw8v8) or the SpigotMC
 discussion thread.

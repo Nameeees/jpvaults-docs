@@ -1,4 +1,4 @@
-﻿# Features
+# Features
 
 ## Vaults that behave like chests
 

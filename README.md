@@ -68,4 +68,4 @@ docs/                 all the content (Markdown)
 - The content is maintained alongside the plugin: `README.md`, `CHANGELOG.md` and `docs/` in the
   plugin repository hold the same information, so update both when something changes.
 - The Discord invite used by the social icon is the community server
-  (<https://discord.gg/HATd9QgukF>).
+  (<https://discord.gg/VQSvfQw8v8>).

@@ -71,7 +71,7 @@ The full tested matrix is in [Compatibility](compatibility.md).
 
 ## Support
 
-- Community Discord: <https://discord.gg/HATd9QgukF>
+- Community Discord: <https://discord.gg/VQSvfQw8v8>
 - Source code and releases: <https://github.com/Nameeees/JPPlayerVaults>
 - Bug reports: open an issue in the plugin repository, or use the discussion thread on the SpigotMC
   resource page. Please include the server version, the plugin version, your `config.yml` and the
